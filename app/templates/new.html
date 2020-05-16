@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+<form action="/new" method="POST">
+  <div class="row">
+        <div class="col">
+            <label for="speed.fldTheft_year">Year</label>
+            <input id="speed.fldTheft_year" type="text" class="form-control" placeholder="year"
+                   name="speed.fldTheft_years" >
+        </div>
+        <div class="col">
+            <label for="fldWeightPounds">Weight (Pounds)</label>
+            <input id="fldWeightPounds" type="text" class="form-control" placeholder="Weight"
+                   name="fldWeightPounds" >
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-success">Success</button>
+
+</form>
+
+{% endblock %}
