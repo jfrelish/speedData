@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block content %}
+<table class="table table-dark">
+    <thead>
+    <tr>
+        <th scope="col">Theft_year</th>
+        <th scope="col">Veh_model</th>
+        <th scope="col">Vehicle_number_of_thefts</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    {% for speed in speed  %}
+    <tr>
+        <td>{{ speed.fldTheft_year }}</td>
+        <td>{{ speed.fldVeh_model }}</td>
+        <td>{{ speed.fldVehicle_number_of_thefts }}</td>
+
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
+
